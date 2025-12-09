@@ -2,7 +2,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: simpleflask
+  name: simpleflask1
   labels:
     app: flaskapp
 spec:
