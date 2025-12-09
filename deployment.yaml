@@ -19,4 +19,4 @@ spec:
       - name: monitorapp
         image: sreedocker123/pythonmonitoringapp:v1
         ports:
-        - containerPort: 5070
+        - containerPort: 5000
