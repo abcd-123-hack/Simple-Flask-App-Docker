@@ -2,21 +2,21 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: pythonmonitor
+  name: simpleflask
   labels:
-    app: monitorapp
+    app: flaskapp
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: monitorapp
+      app: flaskapp
   template:
     metadata:
       labels:
-        app: monitorapp
+        app: flaskapp
     spec:
       containers:
-      - name: monitorapp
+      - name: flaskapp
         image: yabadabadoo27/endsem:v1
         ports:
         - containerPort: 5070
